@@ -1,0 +1,6 @@
+# .gitignore
+
+# Ignore build output
+result
+result-*
+
