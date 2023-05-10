@@ -9,17 +9,17 @@
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
 
+
   in {
     packages.${system} = {
       neovim-custom-config = pkgs.stdenv.mkDerivation {
-        name = "neovim-config";
+        name = "neovim-custom-config";
         src = self;
-        installPhase = ''
-          mkdir -p $out/nvim/
-          cp -r ./nvim $out/nvim/
+          installPhase = ''
+          mkdir -p $out/
+          cp -r ./nvim $out/
           '';
       };
-
       neovim-custom = pkgs.neovim.override {
         configure = {
           customRC = ''
@@ -29,6 +29,7 @@
         };
       };
     };
+
     defaultPackage.${system} = self.packages.${system}.neovim-custom;
   };
 }
