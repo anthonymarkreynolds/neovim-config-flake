@@ -9,7 +9,7 @@
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
     pluginList = import ./plugin-list.nix;
-    buildVimPlugin = {name,url,sha256}: pkgs.vimUtils.buildVimPluginFrom2Nix {
+    buildVimPlugin = { name, url, sha256 }: pkgs.vimUtils.buildVimPluginFrom2Nix {
       pname = name;
       version = "latest";
       src = builtins.fetchTarball {
@@ -36,8 +36,9 @@
             exec 'luafile ' . g:custom_config_path . '/init.lua'
           '';
           packages.myVimPackage = with pkgs.vimPlugins; {
+            # add plugins from nixpkgs here
             start = [
-              nvim-treesitter.withAllGrammars
+              # nvim-treesitter.withAllGrammars
             ] ++ myVimPlugins;
           };
         };
