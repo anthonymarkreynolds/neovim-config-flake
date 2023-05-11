@@ -1,5 +1,7 @@
 # Neovim Config Flake
 
+> :warning: **This project is experimental and a work-in-progress.** Use it at your own risk and be prepared for potential issues.
+
 This is a template repository for creating your own Neovim configuration using Nix Flakes. The main branch includes a minimal `init.lua` and folder structure for the Neovim runtime. Plugin examples are commented out in the template.
 
 ## Requirements

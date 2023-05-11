@@ -3,5 +3,3 @@ vim.opt.rtp:prepend(config_path)
 vim.opt.packpath:prepend(config_path)
 
 -- Add the rest of your Neovim configuration here
-vim.opt.number = true
-vim.cmd("colo habamax")
