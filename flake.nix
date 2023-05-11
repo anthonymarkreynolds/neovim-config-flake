@@ -38,7 +38,7 @@
           packages.myVimPackage = with pkgs.vimPlugins; {
             # add plugins from nixpkgs here
             start = [
-              # nvim-treesitter.withAllGrammars
+              nvim-treesitter.withAllGrammars
             ] ++ myVimPlugins;
           };
         };

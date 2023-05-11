@@ -7,7 +7,7 @@ repos = [
     # Add plugin repos here
 
     # "lukas-reineke/indent-blankline.nvim",
-    # "navarasu/onedark.nvim",
+    "navarasu/onedark.nvim",
 ]
 
 template = """
