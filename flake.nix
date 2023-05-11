@@ -1,5 +1,5 @@
 {
-  description = "Anthony's Neovim config flake";
+  description = "Neovim Config Flake";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
   };
@@ -8,7 +8,7 @@
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
-    pluginList = import ./plugin-list.nix;
+    pluginList = import ./plugins-list.nix;
     buildVimPlugin = { name, url, sha256 }: pkgs.vimUtils.buildVimPluginFrom2Nix {
       pname = name;
       version = "latest";

@@ -4,9 +4,10 @@ import subprocess
 import sys
 
 repos = [
-    "lukas-reineke/indent-blankline.nvim",
-    "navarasu/onedark.nvim",
-    # Add more plugin repos here
+    # Add plugin repos here
+
+    # "lukas-reineke/indent-blankline.nvim",
+    # "navarasu/onedark.nvim",
 ]
 
 template = """
