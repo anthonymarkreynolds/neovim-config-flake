@@ -56,7 +56,7 @@ git push -u origin my-custom-config
 
 ```sh
 git checkout my-custom-config
-git pull origin main
+git merge main
 git push
 ```
 ## Using the Flake
