@@ -6,8 +6,47 @@ import sys
 repos = [
     # Add plugin repos here
 
-    # "lukas-reineke/indent-blankline.nvim",
+    "nvim-lua/plenary.nvim",
+    "kylechui/nvim-surround",
+    "windwp/nvim-autopairs",
+    "numToStr/Comment.nvim",
+    "nvim-treesitter/nvim-treesitter-context",
+    "nvim-treesitter/playground",
+    "lukas-reineke/indent-blankline.nvim",
+    "kevinhwang91/promise-async",
+    "kevinhwang91/nvim-ufo",
+
+    # LSP
+    "neovim/nvim-lspconfig",
+    "jose-elias-alvarez/null-ls.nvim",
+
+    # Completion
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-cmdline",
+    "hrsh7th/cmp-path",
+    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-buffer",
+    # "L4MON4D3/LuaSnip",
+    # "saadparwaiz2/cmp_luasnip",
+    "rafamadriz/friendly-snippets",
+    "onsails/lspkind.nvim",
+
+    #Navigation
+    "nvim-telescope/telescope.nvim",
+    "phaazon/hop.nvim",
+
+    # git
+    "lewis6991/gitsigns.nvim",
+
+    # Theme
     "navarasu/onedark.nvim",
+
+    # Status Line
+    "nvim-lualine/lualine.nvim",
+
+    # Organisation / Project Management
+    "nvim-neorg/neorg",
+
 ]
 
 template = """
