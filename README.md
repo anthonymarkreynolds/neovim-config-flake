@@ -59,6 +59,7 @@ git checkout my-custom-config
 git merge main
 git push
 ```
+
 ## Using the Flake
 
 You can use this Neovim configuration flake as a standalone package, or integrate it into your Home Manager or NixOS configuration.
@@ -76,34 +77,69 @@ nix run
 
 ### Home Manager (Flake)
 
-To include the flake in Home Manager, you need to use the `neovim` module in your Home Manager configuration and provide the custom Neovim package from your flake.
+To include the flake in Home Manager, simply use the `defaultPackage` from your neovim config flake in the `home.packages` of your Home Manager configuration.
 
 First, make sure you have the `neovim-config-flake` added as an input to your Home Manager flake. In your `flake.nix`, add the following under the `inputs` section:
 
 ```nix
-inputs.neovim-config-flake.url = "github:username/neovim-config-flake/your-config-branch";
-```
 
-Replace `username` with the GitHub username where your forked `neovim-config-flake` repository is located, and `your-config-branch` with the name of the branch containing your Neovim configuration.
-
-Then, in your Home Manager configuration, enable the Neovim module and set the package to the custom package from your `neovim-config-flake`:
-
-```nix
 {
-  # ...
+  description = "Home Manager configuration of Jane Doe";
 
-  programs.neovim = {
-    enable = true;
-    package = inputs.neovim-config-flake.defaultPackage.${system};
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+    # Replace `username` with the GitHub username where your forked `neovim-config-flake` repository is located, and `your-config-branch` with the name of the branch containing your Neovim configuration.
+    neovim-config-flake.url = "github:username/neovim-config-flake/your-config-branch";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
+  
+  outputs = {self, nixpkgs, home-manager, neovim-config-flake, ... }:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+
+      # get your `neovim-custom` package
+      myNvim = neovim-config-flake.defaultPackage.${system};
+
+    in {
+      homeConfigurations.jane = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        # Path to your home.nix.
+        modules = [ ./home.nix ];
+
+        # Pass through your package to home.nix
+        extraSpecialArgs = {
+          myNvim = myNvim;
+        };
+      };
+    };
+}
+```
+
+Then, in your Home Manager configuration, add the Neovim package as an argument and include it in `home.packages`:
+
+```nix
+{ config, pkgs, myNvim, ... }:
+{
+  # ...
+  home.packages = [
+    # ...
+    myNvim
+    # ...
+  ];
   # ...
 }
 ```
 
-Replace `${system}` with your system type, for example, `"x86_64-linux"`.
+### NixOS configuration (Flake)
 
-This will configure Home Manager to use the custom Neovim package from your `neovim-config-flake`.
+_TODO: Provide example.
 
 ## Notes
 
