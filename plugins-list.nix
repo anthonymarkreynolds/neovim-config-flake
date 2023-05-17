@@ -27,7 +27,7 @@
 {
   name = "nvim-treesitter-context";
   url = "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/refs/heads/master.tar.gz";
-  sha256 = "0cyl57qj0p4d149wk7jg3hbzrshqrczai45c7aq6f9aimgs3a4j9";
+  sha256 = "080039y37h0xdx541h16xbdqdy9767wf4r210j6c7g7pjwcz2532";
 }
 
 {
@@ -57,19 +57,19 @@
 {
   name = "nvim-lspconfig";
   url = "https://github.com/neovim/nvim-lspconfig/archive/refs/heads/master.tar.gz";
-  sha256 = "0mfjy7jhis96n2az1g9rh9nyv721nhaadifslpczmw6driii9q59";
+  sha256 = "0f7ip52gkmw45wm857p4ra3l7hl9c9mhafx1gn927zvjjlfv9ksq";
 }
 
 {
   name = "null-ls-nvim";
   url = "https://github.com/jose-elias-alvarez/null-ls.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "0ygzm25cpcnkspqby07xb95p459wfd56ll5hrk6czj70qp552f1d";
+  sha256 = "0yrzpgjqv5mxs7m8pq3swlmgb2fsjbqyzwwlfzj0lwciz3462cm8";
 }
 
 {
   name = "nvim-cmp";
   url = "https://github.com/hrsh7th/nvim-cmp/archive/refs/heads/master.tar.gz";
-  sha256 = "07ipggrccpgvyij899dpl5a79knsbf368vlf8v3l3q8x6fj5fnjn";
+  sha256 = "16hg3yijmdpnk8rh9410y9xf1bns4jbcghc9q92pqj4q68bq9zp7";
 }
 
 {
@@ -111,7 +111,7 @@
 {
   name = "telescope-nvim";
   url = "https://github.com/nvim-telescope/telescope.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "01i1dmlnx2303bv8ahgkmks8jsgz4frb6dxcqxh9xk1acsqzbi7c";
+  sha256 = "031l1kdny2l9g9mh59h8pskpmj2ps1p7p8ypk1dymkk30a1a9vw5";
 }
 
 {
@@ -141,6 +141,6 @@
 {
   name = "neorg";
   url = "https://github.com/nvim-neorg/neorg/archive/refs/heads/master.tar.gz";
-  sha256 = "10snm3sp31wbyrirdx9q5h4ssfnsy6s0xkdxlsfiqdrbwaap0p2c";
+  sha256 = "0pz6s0whasl9y030xniavwnxwjk2b8cmfw8ayaxp6yalazcfvz1g";
 }
 ]
