@@ -1,146 +1,170 @@
 [
 
 {
-  name = "plenary-nvim";
-  url = "https://github.com/nvim-lua/plenary.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "0d3h8kjid7mkqzdhakbf9wiyj1vxrcw4n8dp678bxm0452n82vxl";
+  owner = "nvim-lua";
+  repo = "plenary.nvim";
+  rev = "9ac3e9541bbabd9d73663d757e4fe48a675bb054";
+  sha256 = "tG+BrCgE1L7QMbchSzjLfQfpI09uTQXbx7OeFuVEcDQ=";
 }
 
 {
-  name = "nvim-surround";
-  url = "https://github.com/kylechui/nvim-surround/archive/refs/heads/master.tar.gz";
-  sha256 = "0aximc9fiicmhxkqrazjsqfr9mqw7llnfdc778acn5rkhwj1xms9";
+  owner = "kylechui";
+  repo = "nvim-surround";
+  rev = "219bd66585aa467b1c90fd01b54a2a423aaed4ab";
+  sha256 = "SdceJIczF8sUOoc1Zyk9HNeUHdbyq4xnh5XF6BKrsSs=";
 }
 
 {
-  name = "nvim-autopairs";
-  url = "https://github.com/windwp/nvim-autopairs/archive/refs/heads/master.tar.gz";
-  sha256 = "0j0kpy379yhcv35l4jby5qyzqfpckwy7s09q0cc8sla7n1i1b00j";
+  owner = "windwp";
+  repo = "nvim-autopairs";
+  rev = "7747bbae60074acf0b9e3a4c13950be7a2dff444";
+  sha256 = "EoAVYrBHUY0YAzgBfTyf7Dr8PS5+SULL2Az6dIa/E0g=";
 }
 
 {
-  name = "Comment-nvim";
-  url = "https://github.com/numToStr/Comment.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "13ypypkb63j8spg9av9i7n0yp0g4d1hwrym0f9659r0kxmzy9h88";
+  owner = "numToStr";
+  repo = "Comment.nvim";
+  rev = "e1fe53117aab24c378d5e6deaad786789c360123";
+  sha256 = "CMHkf+0T5FRMcqD6zGFo5IHrgT0xbZXe1UgOs+b1148=";
 }
 
 {
-  name = "nvim-treesitter-context";
-  url = "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/refs/heads/master.tar.gz";
-  sha256 = "080039y37h0xdx541h16xbdqdy9767wf4r210j6c7g7pjwcz2532";
+  owner = "nvim-treesitter";
+  repo = "nvim-treesitter-context";
+  rev = "c8f3a62c64bf6f9fed11260a424207f780505f83";
+  sha256 = "YhTxGZf3vMOMBEFk4vgxJ/mG2+omwEBKbx3AM3waACA=";
 }
 
 {
-  name = "playground";
-  url = "https://github.com/nvim-treesitter/playground/archive/refs/heads/master.tar.gz";
-  sha256 = "1b7h4sih8dc55w12f0v5knk9cxfpy0iffhbvmg0g84if55ar616v";
+  owner = "nvim-treesitter";
+  repo = "playground";
+  rev = "2b81a018a49f8e476341dfcb228b7b808baba68b";
+  sha256 = "2wSTVSkuEvTAq3tB5yLw13WWpp1lAycCL4U1BKMm8Kw=";
 }
 
 {
-  name = "indent-blankline-nvim";
-  url = "https://github.com/lukas-reineke/indent-blankline.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "1ncpar0n8702j5h4a2bv8zx9kcg7gwfhs52qqrcg1yfsgjzb86bl";
+  owner = "lukas-reineke";
+  repo = "indent-blankline.nvim";
+  rev = "018bd04d80c9a73d399c1061fa0c3b14a7614399";
+  sha256 = "dBm0vnza+fBYxlgUDR1/57GZ+kd7CUVgkQIcZEFWl9k=";
 }
 
 {
-  name = "promise-async";
-  url = "https://github.com/kevinhwang91/promise-async/archive/refs/heads/master.tar.gz";
-  sha256 = "0cavxw5v3nhnrs26r7cqxirq2ydk5g1ymcd3m4gf4rjjw9n067sd";
+  owner = "kevinhwang91";
+  repo = "promise-async";
+  rev = "e94f35161b8c5d4a4ca3b6ff93dd073eb9214c0e";
+  sha256 = "TR8DbOJSZuIeqaOx6sMrs3mBc+yYnWyEzhbasQvvWzE=";
 }
 
 {
-  name = "nvim-ufo";
-  url = "https://github.com/kevinhwang91/nvim-ufo/archive/refs/heads/master.tar.gz";
-  sha256 = "184zlg2glhmv3b3cik9xlj0x3xcs5g30hnwrsczjb5ihs2xzm4ba";
+  owner = "kevinhwang91";
+  repo = "nvim-ufo";
+  rev = "45aede6f5c4981156df3ddeeae01c4290e43e104";
+  sha256 = "apH6u9AwliU/05lbCMYrmvXRgaQ9zcjGGrtC+sSjn6A=";
 }
 
 {
-  name = "nvim-lspconfig";
-  url = "https://github.com/neovim/nvim-lspconfig/archive/refs/heads/master.tar.gz";
-  sha256 = "0f7ip52gkmw45wm857p4ra3l7hl9c9mhafx1gn927zvjjlfv9ksq";
+  owner = "neovim";
+  repo = "nvim-lspconfig";
+  rev = "8dc45a5c142f0b5a5dd34e5cdba33217d5dc6a86";
+  sha256 = "WM+0HZVy/yOSfaE7BWtiicJDh8rknoIqL4TX+US58Tg=";
 }
 
 {
-  name = "null-ls-nvim";
-  url = "https://github.com/jose-elias-alvarez/null-ls.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "0yrzpgjqv5mxs7m8pq3swlmgb2fsjbqyzwwlfzj0lwciz3462cm8";
+  owner = "jose-elias-alvarez";
+  repo = "null-ls.nvim";
+  rev = "77e53bc3bac34cc273be8ed9eb9ab78bcf67fa48";
+  sha256 = "WHGIYU65YlbtdQFQVGzdcjrBQmu6aK0jgXEMTyKzdsA=";
 }
 
 {
-  name = "nvim-cmp";
-  url = "https://github.com/hrsh7th/nvim-cmp/archive/refs/heads/master.tar.gz";
-  sha256 = "16hg3yijmdpnk8rh9410y9xf1bns4jbcghc9q92pqj4q68bq9zp7";
+  owner = "hrsh7th";
+  repo = "nvim-cmp";
+  rev = "3ac8d6cd29c74ff482d8ea47d45e5081bfc3f5ad";
+  sha256 = "5/6EFzKYSHxFwonBx5Yk2q7gevIgkAQzmva2KqMfD5o=";
 }
 
 {
-  name = "cmp-cmdline";
-  url = "https://github.com/hrsh7th/cmp-cmdline/archive/refs/heads/master.tar.gz";
-  sha256 = "02xpxdbjvic4l2s4fmhiy38igvvg0mdpi6hr49kvnibx1dyzhx5k";
+  owner = "hrsh7th";
+  repo = "cmp-cmdline";
+  rev = "5af1bb7d722ef8a96658f01d6eb219c4cf746b32";
+  sha256 = "s3T4fQt9RbtnIhmaeFsFb+8X0fARVke0oITFLVfrtws=";
 }
 
 {
-  name = "cmp-path";
-  url = "https://github.com/hrsh7th/cmp-path/archive/refs/heads/master.tar.gz";
-  sha256 = "18ixx14ibc7qrv32nj0ylxrx8w4ggg49l5vhcqd35hkp4n56j6mn";
+  owner = "hrsh7th";
+  repo = "cmp-path";
+  rev = "91ff86cd9c29299a64f968ebb45846c485725f23";
+  sha256 = "thppiiV3wjIaZnAXmsh7j3DUc6ceSCvGzviwFUnoPaI=";
 }
 
 {
-  name = "cmp-nvim-lsp";
-  url = "https://github.com/hrsh7th/cmp-nvim-lsp/archive/refs/heads/master.tar.gz";
-  sha256 = "0gpwwc3rhfckaava83hpl7pw4rspicblxs7hy3y57gb560ymq6hg";
+  owner = "hrsh7th";
+  repo = "cmp-nvim-lsp";
+  rev = "0e6b2ed705ddcff9738ec4ea838141654f12eeef";
+  sha256 = "DxpcPTBlvVP88PDoTheLV2fC76EXDqS2UpM5mAfj/D4=";
 }
 
 {
-  name = "cmp-buffer";
-  url = "https://github.com/hrsh7th/cmp-buffer/archive/refs/heads/master.tar.gz";
-  sha256 = "1cwx8ky74633y0bmqmvq1lqzmphadnhzmhzkddl3hpb7rgn18vkl";
+  owner = "hrsh7th";
+  repo = "cmp-buffer";
+  rev = "3022dbc9166796b644a841a02de8dd1cc1d311fa";
+  sha256 = "dG4U7MtnXThoa/PD+qFtCt76MQ14V1wX8GMYcvxEnbM=";
 }
 
 {
-  name = "friendly-snippets";
-  url = "https://github.com/rafamadriz/friendly-snippets/archive/refs/heads/master.tar.gz";
-  sha256 = "1nlbm7ji73ggg48pzvlbb32jfscnj71bgfzg4q1p3zfvssisz85c";
+  owner = "rafamadriz";
+  repo = "friendly-snippets";
+  rev = "1d0dac346de7c6895ac72528df3276386c6b149b";
+  sha256 = "rKCvo9bb/XEDJu+7t8KRlmknxViL7n8Ree+NE+Wpi9o=";
 }
 
 {
-  name = "lspkind-nvim";
-  url = "https://github.com/onsails/lspkind.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "18lpp3ng52ylp8s79qc84b4dhmy7ymgis7rjp88zghv1kndrksjb";
+  owner = "onsails";
+  repo = "lspkind.nvim";
+  rev = "57610d5ab560c073c465d6faf0c19f200cb67e6e";
+  sha256 = "S+qZm51hw/cRujIfHV/1x1fYyCKI4XQ0utSL8uy4l6I=";
 }
 
 {
-  name = "telescope-nvim";
-  url = "https://github.com/nvim-telescope/telescope.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "031l1kdny2l9g9mh59h8pskpmj2ps1p7p8ypk1dymkk30a1a9vw5";
+  owner = "nvim-telescope";
+  repo = "telescope.nvim";
+  rev = "40c31fdde93bcd85aeb3447bb3e2a3208395a868";
+  sha256 = "he+kggJjzupbmNeje27QV8h6p74IpgJreokKb9sMNAw=";
 }
 
 {
-  name = "hop-nvim";
-  url = "https://github.com/phaazon/hop.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "18akjbplhp27di5l0bi9yd2haysgvw8yv3yk6cgwbizmk6inb5ji";
+  owner = "phaazon";
+  repo = "hop.nvim";
+  rev = "03f0434869f1f38868618198b5f4f2ab6d39aef2";
+  sha256 = "xdjFbdp0+S3pVdwcOFmad8PMUU033WeDzswOSdxSQjg=";
 }
 
 {
-  name = "gitsigns-nvim";
-  url = "https://github.com/lewis6991/gitsigns.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "1sa50871l86fx1hyrhb07i03r1sjlw76zp30csf846n24vnnnjrq";
+  owner = "lewis6991";
+  repo = "gitsigns.nvim";
+  rev = "814158f6c4b1724c039fcefe79b0be72c9131c2d";
+  sha256 = "OEtr7SbCGoKcZmDcbw6nUoc8QDxgwexh6M4gGg4CRek=";
 }
 
 {
-  name = "onedark-nvim";
-  url = "https://github.com/navarasu/onedark.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "060ghwpwpwmlwk5rpsww1cdd7fvsf105bq1lxirbk70xmk3y4b0b";
+  owner = "navarasu";
+  repo = "onedark.nvim";
+  rev = "f6e82074761473d30a722f5d90c60282de1ac41d";
+  sha256 = "Cyzix6wdnLly7DTgVUBwervTGguc65vL5LTyyy+HDxg=";
 }
 
 {
-  name = "lualine-nvim";
-  url = "https://github.com/nvim-lualine/lualine.nvim/archive/refs/heads/master.tar.gz";
-  sha256 = "1nh8yrcfq654qwj2zpkqsd62cz4p6mii998lxhs6mf1a8bqw9lcn";
+  owner = "nvim-lualine";
+  repo = "lualine.nvim";
+  rev = "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9";
+  sha256 = "ltHE8UIquGo07BSlFGM1l3wmTNN43i8kx6QY7Fj2CNo=";
 }
 
 {
-  name = "neorg";
-  url = "https://github.com/nvim-neorg/neorg/archive/refs/heads/master.tar.gz";
-  sha256 = "0pz6s0whasl9y030xniavwnxwjk2b8cmfw8ayaxp6yalazcfvz1g";
+  owner = "nvim-neorg";
+  repo = "neorg";
+  rev = "5a9696e6eb7c0277431739c50b0dd7615419cf6a";
+  sha256 = "146DuJSCUC1XEE28u131VgbLaYNbae3A5kkD6HFeA1c=";
 }
 ]

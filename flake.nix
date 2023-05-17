@@ -17,7 +17,7 @@
       nvimPath = ./nvim;
       pluginList = import ./plugins-list.nix;
       buildVimPlugin = src@{ repo, ... }: pkgs.vimUtils.buildVimPluginFrom2Nix {
-        pname = repo;
+        pname = builtins.replaceStrings ["."] ["-"] repo;
         version = "latest";
         src = pkgs.fetchFromGitHub src;
       };
@@ -33,16 +33,16 @@
             '';
         };
 
-        neovim-custom = pkgs.neovim.override {
+        neovim-custom = unstablePkgs.neovim.override {
           configure = {
             customRC = ''
               let g:custom_config_path = '${self.packages.${system}.neovim-custom-config}/nvim'
               exec 'luafile ' . g:custom_config_path . '/init.lua'
             '';
-            packages.myVimPackage = with pkgs.vimPlugins; {
+            packages.myVimPackage = with unstablePkgs.vimPlugins; {
               # add plugins from nixpkgs here
               start = [
-                # nvim-treesitter.withAllGrammars
+                nvim-treesitter.withAllGrammars
               ] ++ (map buildVimPlugin pluginList);
             };
           };
