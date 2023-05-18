@@ -155,6 +155,13 @@
 }
 
 {
+  owner = "kyazdani42";
+  repo = "nvim-web-devicons";
+  rev = "986875b7364095d6535e28bd4aac3a9357e91bbe";
+  sha256 = "+UH04+Bu167fthQntUATik9wl/vRfkMJ/A9JheaHx9w=";
+}
+
+{
   owner = "nvim-lualine";
   repo = "lualine.nvim";
   rev = "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9";

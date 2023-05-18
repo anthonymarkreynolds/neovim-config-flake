@@ -41,6 +41,7 @@ repos = [
 
     # Theme
     "navarasu/onedark.nvim",
+    "kyazdani42/nvim-web-devicons",
 
     # Status Line
     "nvim-lualine/lualine.nvim",
